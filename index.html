@@ -1,172 +1,737 @@
-<!doctype html>
-<html>
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta charset="utf-8">
-<title>泰达官网</title>
-	<link rel="stylesheet" href="css/index.css" type="text/css">
-    <script type="text/javascript" src="javascript/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="javascript/jquery.mousewheel.min.js"></script>
-    <script type="text/javascript" src="javascript/index.js"></script>
-    <link rel="shortcut icon" href="bitbug_favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>泰达官网</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+    <!--[if lte IE 8]>
+    <LINK rel="stylesheet" type="text/css" href="css/style.css" />
+    <![endif]-->
+    <link rel="stylesheet" media="screen and (min-width:980px)" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width:980px)" href="css/wapstyle.css" />
+    <style type="text/css">
+    .Mcontent img,
+    .WapNr img {
+        width: auto;
+    }
+    </style>
+    <script src="js/jshelper.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript">
+    window.onload = function() {
+        XunLei();
+        SetPage();
+        SrceenMax980();
+        Slid();
+        WapJob();
+        QRcode();
+        cmenu();
+    };
+    window.onresize = function() {
+        SetPage();
+    };
+    </script>
 </head>
+
 <body>
-	<div class="con">
-<!--页面一开始-->
-    	<div class="page1">
-        	
-        	<ul>
-            	<li><img src="images/banner01.jpg" width="100%" height="100%"></li>
-                <li><img src="images/banner02.jpg" width="100%" height="100%"></li>
-                <li><img src="images/banner03.jpg" width="100%" height="100%"></li>
-           <!--      <li><img src="images/banner04.jpg" width="100%" height="100%"></li>
-                <li><img src="images/banner05.jpg" width="100%" height="100%"></li> -->
-            </ul>
-            <ol class="pgOl">
-            	<li class="pgolLi">1</li>
-            	<li>2</li>
-            	<li>3</li>
-            <!-- 	<li>4</li>
-            	<li>5</li> -->
-            </ol>
-        </div>
-<!--页面一结束-->
-         
-<!--页面二开始-->   
-    	<div class="page2">
-        <div class="pg2C"><img src="images/cases.png" width="960" height="60"></div>
-        <!--滑动门导航开始-->
-        	<div class="nav02">
-                <ul>                    
-                    <li><a class="aa"><span>人事经理</span></a></li>                   
-                    <li><a><span>行政专员</span></a></li>
-                    <li><a><span>营销策划</span></a></li>
-                    <li><a class="ee"><span>财务</span></a></li>
-                    <li><a class="dd"><span>出纳</span></a></li>
-                    <li><a class="dd"><span>医生</span></a></li>
-                    <li><a class="hh"><span>护士长</span></a></li>
-                    <li class="navLi07"><a><span>护士</span></a></li>
-                    <li><a class="hh"><span>血液净化中心工程师</span></a></li>
-                </ul>
-                <figure>
-                	<audio src="images/music/a1.mp3"></audio>
-                    <audio src="images/music/a2.mp3"></audio>
-                    <audio src="images/music/a3.mp3"></audio>
-                    <audio src="images/music/a4.mp3"></audio>
-                    <audio src="images/music/a5.mp3"></audio>
-                    <audio src="images/music/a6.mp3"></audio>
-                    <audio src="images/music/a7.mp3"></audio>
-                    <audio src="images/music/a7.mp3"></audio>
-                </figure>
-		  </div>
-           <!--滑动门导航结束-->
-        	<div class="pg2Zp">            
-            	<div class="pg2Up">
-                 <!--无缝链接导航1开始-->
-                    <ul class="pg2Up01">
-                        <li><a class="a"><img src="images/small-banner-01.jpg" width="240" height="180"><p>人事经理</p></a><div class="heise"></div></li>
-                        <li><a class="b"><img src="images/small-banner-02.jpg" width="240" height="180"><p>行政专员</p></a><div class="heise"></div></li>
-                        <li><a  class="c"><img src="images/small-banner-03.jpg" width="240" height="180"><p>营销策划</p></a><div class="heise"></div></li>
-                        <li><a class="d"><img src="images/small-banner-04.jpg" width="240" height="180"><p>财务</p></a><div class="heise"></div></li>
-                        <li><a class="e"><img src="images/small-banner-05.jpg" width="240" height="180"><p>出纳</p></a><div class="heise"></div></li>
-                           <li><a class="e"><img src="images/small-banner-05.jpg" width="240" height="180"><p>医生</p></a><div class="heise"></div></li>
-                        <li><a class="f"><img src="images/small-banner-06.jpg" width="240" height="180"><p>护士长</p></a><div class="heise"></div></li>
-                        <li><a class="h"><img src="images/small-banner-07.jpg" width="240" height="180"><p>血液净化中心工程师</p></a><div class="heise"></div></li>
-                    </ul>
-                    <!--无缝链接导航1结束-->
+    <form method="post" action="./Jobs.aspx" id="form1">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNjA1MTM4ODc2ZGR7Ru89XdsIHMEVPoFoCVX9IwbyYvfqwyPGKb8gs2kRXg==" />
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CB8B973B" />
+        <table id="QRcode">
+            <tr>
+                <td><img src="picture/qrcode.jpg" />
+                    <div id="offQR"><img src="picture/offblack.png" /></div>
+                </td>
+            </tr>
+        </table>
+        <div id="Header">
+            <div class="Col" style="background-color: #ffffff; float:left; padding-top:0.6%;">
+                <img id="Logo" src="picture/logo.jpg" />
+                <div id="LogoText">
+                    <p>泰达官网</p>
+                    <span>An Outstanding Shopper Marketing Company</span>
                 </div>
-           
             </div>
-<!--网页作品展示开始-->
-		<div class="showWangye">
-        	<span class="showwangyeTc" onclick="$('.showWangye').fadeOut(300)">退出</span>
-            <div class="workInfoBox">
-                <!-- <p class="title">职位</p>
-                <p class="work">岗位职责</p>
-                <p class="info_item">
-                    1.你需要做是你需要做是你需要做是你需要做是你需要做是你需要做是你需要
-                </p>
-                <p class="info_item">
-                    1.你需要做是你需要做是你需要做是你需要做是你需要做是你需要做是你需要
-                </p>
-                <p class="info_item">
-                    1.你需要做是你需要做是你需要做是你需要做是你需要做是你需要做是你需要
-                </p>
-                <p class="info_item">
-                    1.你需要做是你需要做是你需要做是你需要做是你需要做是你需要做是你需要
-                </p>
-                <p class="info_item">
-                    1.你需要做是你需要做是你需要做是你需要做是你需要做是你需要做是你需要
-                </p> -->
+            <div class="Col" style="width:66%; background: #ffcc00;">
+                <ul id="Nav" class="a_00 ">
+                    <li>
+                        <a href="#">
+                            <p>首页</p>
+                            <span>Home</span>
+                        </a>
+                        <ul id="Menu01" class="cMenu"></ul>
+                    </li>
+                    <li>
+                        <p>公司简介</p>
+                        <span>Who We Are</span>
+                    </li>
+                    <li>
+                        <p>公司业务</p>
+                        <span>Company  Services</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>专享服务</p>
+                            <span>Services to you</span>
+                        </a>
+                        <ul id="Menu04" class="cMenu"></ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>招聘求职</p>
+                            <span>Join Us</span>
+                        </a>
+                        <ul id="Menu05" class="cMenu"></ul>
+                    </li>
+                </ul>
+                <div id="Tel">
+                    <p>TEL：0951-410-6132</p>
+                    <input id="Search" type="search" placeholder="search" />
+                </div>
             </div>
         </div>
-<!--网页作品展示结束-->                    
-   	  </div>
-<!--页面二结束-->
-      
-<!--页面三开始-->
-    	<div class="page3">
-     		<div class="pg3s"><img src="images/skill-02.png" width="960" height="60"></div>
-        	<div class="pg3Wz">
-       	   		 专项服务模块(未完成，等详细信息后注入)
-            </div>
+        <div class="JobAbout">
+            <table class="Inf">
+                <tr>
+                    <td>
+                        <h1>招聘求职 <span>Join Us</span> </h1>
+                        <i></i>
+                        <div class="cn">
+                            <p>单位：泰和光明血液透析中心</p>
+                            <p>· 工作地点：陕西、甘肃、宁夏、青海、内蒙、广东、广西、福建、海南</p>
+                            <p>· 待遇：面议</p>
+                            <p>· 工作性质：全职</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="Pic"><img src="picture/jobsabout.jpg" /></div>
         </div>
-<!--页面三结束-->
-      
-<!--页面四开始-->
-    	<div class="page4">
-       	  <div class="pg4A"><img src="images/about.png" width="960" height="60"></div>
-           <div style="position: absolute; left: 190px; top: 200px; color: #fff;">
-                <p>域名注册(未完成，等详细信息后注入)</p>
-                <p>.com\.cn\.org\.net\.vip\.shop\.store\.top\.online\.tech\.group\.info\.com.cn\.net.cn\.org.cn\.name\</p>
-           </div>   
-      </div>
-<!--页面四结束-->
+        <div class="JobClass">
+            <div id="Jleft"><img src="picture/left.png" /></div>
+            <div id="Jright"><img src="picture/right.png" /></div>
+            <ul id="JMenu">
+                <li class="bgodd active">
+                    <p>人事部</p>
+                    <p>Personnel Department</p>
+                </li>
+                <li>
+                    <p>策划部</p>
+                    <p>Planning Department</p>
+                </li>
+                <li class="bgodd">
+                    <p>财务部</p>
+                    <p>Financial Department</p>
+                </li>
+                <li>
+                    <p>医生招聘</p>
+                    <p>Doctor Recruitment</p>
+                </li>
+                <li class="bgodd">
+                    <p>其他部门</p>
+                    <p>Other Department</p>
+                </li>
+            </ul>
+            <div id="Content">
+                <div style="display:block;" class="JMain">
+                    <div id="Mcontent1" class="Mcontent">
+                        <div class="Mright" style="display:block;">
+                            <h2>人事经理</h2>
+                            <div class="tit">Personnel Manager<span>2018/03/11</span></div>
+                            <div class="cn"><strong>岗位职责：</strong>
+                                <br />1、参与制定人力资源战略规划。 
+                                <br />2、组织制定行政管理规章制度及督促、检查制度的贯彻执行。 
+                                <br />3、负责本部门的信息资料档案管理工作。 
+                                <br />4、协助总经理处理公司公文、行政、人事工作。 
+                                <br />5、建立人事管理内部工作程序和工作标准，提高工作效率。 
+                                <br />6、制定符合公司发展并有激励性的薪酬激励体系。 
+                                <br />7、人员招聘，人事档案管理。 
+                                <br />8、劳动合同管理、签订。 
+                                <br />9、制定全面的考核体系及评价政策并组织实施，对各部门绩效评价过程进行监督，解决出现的问题，使评价体系落到实处，不断完善绩效管理体系。 
+                                <br />10、人际关系良好，具备较强的责任感和事业心。
+                                <br />
+                                <strong>岗位要求：</strong>
+                                <br /> 1、招聘1人，专科及以上学历，人力资源、行政管理、劳动经济等相关专业；
+                                <br /> 2、全面了解人力资源各模块工作，熟悉劳动法等；
+                                <br /> 3、有较强的执行力、管理能力及职业素养，服务意识，团队合作精神；
+                                <br /> 4、沟通能力强，工作风格成熟稳重。
+                            </div>
+                        </div>
+                        <div class="Mright">
+                            <h2>行政专员</h2>
+                            <div class="tit">Administrative Officer<span>2018/03/11</span></div>
+                            <div class="cn"><strong>岗位职责：</strong>
+                                <br /> 1、负责公司的行政管理工作，做好各部门间的沟通、协调与工作落实；
+                                <br /> 2、负责公司企业文化建设，组织和开展公司各项文体娱乐活动；
+                                <br /> 3、负责公司员工考勤的管理与统计工作，固定资产及其他办公设备的管理工作；
+                                <br /> 4、负责公司各类证件的办理、年审、续期、变更工作；
+                                <br /> 5、完成上级交办的其它工作。
+                                <br />
+                                <strong>岗位要求：</strong>
+                                <br />招聘1人， 大专以上学历，行政管理、人力资源管理或相关专业；本科以上学历，营销/广告/人力资源相关专业；
+                                <br /> 2、 熟练操作办公软件；熟悉行政管理工作，清楚行政管理的业务流程；
+                                <br /> 3、  组织沟通协调能力强，有原则，执行能力强，有亲和力，气质、形象佳，性格开朗、乐观；有过人事助理或行政工作经验者优先。
+                            </div>
+                        </div>
+                        <div class="Mright">
+                            <h2>客户主任</h2>
+                            <div class="tit">Account Executive<span>2018/03/11</span></div>
+                            <div class="cn"><strong>岗位职责：</strong>
+                                <br /> 1、协助完成方案策划、跟进相关物料制作及运输流程，相关数据的每天更新、数据分析与及时反馈；
+                                <br /> 2、组织、安排内部会议，确保会议的正常进行，并做好相关记录及总结；
+                                <br /> 3、根据客户要求结合项目实际情况，向项目组发出相应指令，协助监督及把控活动的完成质量；
+                                <br /> 4、日常客户沟通协调，紧急情况及客户投诉的处理，上传下达优化管理流程；
+                                <br /> 5、参与项目结算，协助完成项目回顾总结。
+                                <br />
+                                <br />
+                                <strong>岗位要求：</strong>
+                                <br /> 1、营销/广告等专业大专以上学历，有服务国内外知名品牌的经验者优先；
+                                <br /> 2、一年以上广告或市场推广经验，了解线下推广或促销活动的运作流程；
+                                <br /> 3、形象佳，思维清晰，有较强的逻辑思维能力及抗压能力；
+                                <br /> 4、具有积极、主动、热情的工作态度，责任心强，有强烈发展意愿；
+                                <br /> 5、熟练操作办公软件：EXCEL/POWERPOINT；
+                                <br /> 6、英文4级以上、有海外留学经验人员优先考虑；
+                                <br /> 7、可考虑优秀应届生。
+                                <br />
+                                <br /> 简历投递：hr-career@dawson.com.cn
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Mleft1" class="Mleft">
+                        <h2>具体职位 Specific Position </h2>
+                        <ul id="LeftNav1">
+                            <li class='active'>人事经理<span>Personnel Manager</span></li>
+                            <li>行政专员<span>Administrative Officer</span></li>
+                            <!-- <li>客户主任<span>Account Executive</span></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="JMain">
+                    <div id="Mcontent2" class="Mcontent">
+                        <div class="Mright" style="display:block;">
+                            <h2>营销策划</h2>
+                            <div class="tit"> Marketing planning<span>2018/03/11</span></div>
+                            <div class="cn"><strong>岗位职责：</strong>
+                                <br /> 1、主导项目创意，完成创意构想、创意执行、后期设计制作跟进等工作；
+                                <br /> 2、提供专业视觉表现支持，保证高效率、高品质的完成工作；
+                                <br /> 3、了解客户需求，并密切与客户部，策略和其他相关部门合作，并且能够把客户的需求贯彻到创意当中；
+                                <br /> 4、配合设计团队确保项目及时推进。
+                                <br />
 
-<!--页面五开始-->
-    	<div class="page5">
-     		<div class="pg5C"><img src="images/contact.png" width="960" height="60"></div>
-            <div class="contact_item_box">
-                <p class="contact_item">
-                地址:宁夏银川市长城东路439号401
-                </p>
-                 <p class="contact_item">
-                     传真:0951-410-6202 
-                </p> 
-                <p class="contact_item">
-                     南区:广东广州市江南大道南362号4115
-                </p>
-                 <p class="contact_item">
-                    电话:020-8944-9646
-                </p> 
-                <p class="contact_item">
-                    (未完成，等详细信息后注入)
-                </p>
+
+                                <strong>岗位要求：</strong>
+                                <br /> 1、招聘1人，市场营销、设计、媒体管理等相关专业大学本科及以上学历；
+                                <br /> 2、有营销策划经验、市场经验；具有敏锐的市场洞察力；
+                                <br />3、能够熟练掌握市场策划整体运作流程的细节，优秀的公关能力、协调能力和组织能力；
+                                <br /> 4、 较强的判断与决策能力、逻辑推理和分析能力。
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Mleft2" class="Mleft">
+                        <h2>具体职位 Specific Position </h2>
+                        <ul id="LeftNav2">
+                            <li class='active'>营销策划<span> Marketing planning</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="JMain">
+                    <div id="Mcontent3" class="Mcontent">
+                        <div class="Mright" style="display:block;">
+                            <h2>财务</h2>
+                            <div class="tit">Financial<span>2018/03/11</span></div>
+                            <div class="cn"><strong>岗位职责：</strong>
+                                <br /> 1、日常付款单据的整理；
+                                <br /> 2、日常报销付款及公司各项收付款业务，资金账户网银操作（银行账户）；
+                                <br /> 3、负责资金账户的开户、业务办理；
+                                <br /> 4、负责财务相关资料的整理及归档；
+                                <br /> 5、每月及时提供银行明细等资料；
+                                <br /> 6、编制各资金账户日记账；
+                                <br /> 7、负责每月工资的发放工作；
+                                <br /> 8、负责开具发票，协助会计账务处理；
+                                <br /><strong>岗位要求：</strong>
+                                <br />1、招聘人数1人，财会专业大专或以上学历，有会计从业资格证书；
+                                <br /> 2、了解国家财经政策和会计、税务法规，熟悉银行结算业务；
+                                <br /> 3、一年以上出纳工作经验。
+                            </div>
+                        </div>
+                        <div class="Mright">
+                            <h2>出纳</h2>
+                            <div class="tit">Cashier<span>2018/03/11</span></div>
+                            <div class="cn"><strong>岗位职责：</strong>。
+                                <br /> 1.负责日常收支的管理和核对；
+                                <br /> 2.登记现金及银行日记账，做到日清月结；
+                                <br /> 3.负责公司订单的统计、审核及管理；
+                                <br /> 4.负责记账凭证的编号、装订；
+                                <br /> 5.负责开具票据及制作各项出纳报表；
+                                <br /><strong>岗位要求：</strong>
+                                <br /> 1、招聘1人，本科及以上学历，财会相关专业；
+                                <br /> 2、从事出纳工作2年以上，有一般纳税人企业、软件行业工作经验优先考虑；
+                                <br /> 3、有会计从业资格证优先；有较强的责任心和使命感，具有较强的沟通、协调能力、执行和抗压能力、保密意识强，有团队精神。
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Mleft3" class="Mleft">
+                        <h2>具体职位 Specific Position </h2>
+                        <ul id="LeftNav3">
+                            <li class='active'>财务<span>Financial</span></li>
+                            <li>出纳<span>Cashier</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="JMain">
+                    <div id="Mcontent4" class="Mcontent">
+                        <div class="Mright" style="display:block;">
+                            <h2>医生</h2>
+                            <div class="tit">Doctor<span>2018/03/11</span></div>
+                            <div class="cn">
+                                <strong>岗位职责：</strong>
+                                <br />1.负责透析患者的日常诊疗，做好透析患者的病例档案记录；
+                                <br />2.掌握透析患者的病情，制定个性化的透析及综合治疗方案；
+                                <br />3.评估透析效果，处理透析并发症；
+                                <br />
+                                <strong>岗位要求：</strong>
+                                <br /> 1、招聘人数2人，大专及以上学历，临床医学或肾脏病学专业，有医师初级或中级执业资格；
+                                <br /> 2、具有二级以上医院工作经验；有肾内科或血透工作经验者优先；
+                                <br /> 3、有血液透析进修证书者优先；
+                                <br /> 4、注：如无血液透析进修证书，可安排三甲医院带薪进修3个月（进修期间只发基本工资）。
+                            </div>
+                        </div>
+                        <div class="Mright">
+                            <h2>护士长</h2>
+                            <div class="tit">Nurse Management<span>2018/03/11</span></div>
+                            <div class="cn"><strong>岗位职责：</strong>
+                                <br />1.负责透析中心日常护理工作的组织和管理；
+                                <br />2.负责中心护理人员的专业培训、团队建设等内部管理工作；
+                                <br />3.参与并指导护士完成透析患者的护理工作。
+                                <br />
+                                <strong>岗位要求：</strong>
+                                <br /> 1、招聘人数1人，大专及以上学历，护理专业；
+                                <br /> 2、主管护师或5年以上护师工作经验；
+                                <br /> 3、具有二级以上医院工作经验，3年以上血液透析经验；
+                                <br /> 4、具备一定的教学、管理能力。
+                            </div>
+                        </div>
+                        <div class="Mright">
+                            <h2>护士</h2>
+                            <div class="tit">Nurse<span>2018/03/11</span></div>
+                            <div class="cn"><strong>岗位职责：</strong>
+                                <br />1.在护士长、护理组长领导下实施分管病人的各项护理工作；
+                                <br />2.落实各项护理工作流程、工作标准和技术规范；
+                                <br />3.按要求完成病情观察及护理记录；
+                                <br />
+                                <strong>岗位要求：</strong>
+                                <br /> 1、招聘人数5人，大专及以上学历，具有护士资格证、执业证；
+                                <br /> 2、具有两年以上护理工作经验；
+                                <br /> 3、具有血液透析工作经验或血液透析进修证书者优先；
+                                <br /> 4、注：如无血液透析进修证书，可安排三甲医院带薪进修3个月（进修期间只发基本工资）
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Mleft4" class="Mleft">
+                        <h2>具体职位 Specific Position </h2>
+                        <ul id="LeftNav4">
+                            <li class='active'>医生<span>Doctor</span></li>
+                            <li>护士长<span>Nurse Management</span></li>
+                            <li>护士<span>Nurse</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="JMain">
+                    <div id="Mcontent5" class="Mcontent">
+                        <div class="Mright" style="display:block;">
+                            <h2>血液净化中心工程师</h2>
+                            <div class="tit">Blood Purification Center Engineer<span>2018/03/11</span></div>
+                            <div class="cn"><strong>岗位职责：</strong>
+                                <br />1、 负责血透室医疗仪器设备的管理工作；按需求负责仪器维修业务联系，保证所有仪器设备的完整，正常安全投入使用
+                                <br />2、 负责制定医疗仪器设备的操作规范，指导和监督医护人员正确使用医疗仪器设备；
+                                <br />3、 负责血透室新采购设备仪器的验收及安装调试工作；
+                                <br />4、制定仪器设备操作人员的培训计划（包括设备仪器的使用、日常保养、使用注意事项等）；
+                                <br />5、 负责设备器械台帐管理和填报，做到帐物相符、及时更新；
+                                <br />6、负责按规定具体办理仪器设备调拨、转让、报损、报废手续及帐目调整和资产处置工作；
+                                <br />7、 做好年度专项计划的申购、设备管理和清产核资工作。
+                                <br />
+                                <strong>岗位要求：</strong>
+                                <br /> 1、大专及以上学历医疗器械专业毕业，具备机械和电子学知识及一定的医疗知识；
+                                <br />2、具有血透室工作或者相关工作经验3年以上；
+                                <br />3、熟悉血液净化室（中心）各医疗设备的性能、结构、工作原理和维修技术；
+                                <br />4、有血透室工程师上岗培训资格证书者优先。
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Mleft5" class="Mleft">
+                        <h2>具体职位 Specific Position </h2>
+                        <ul id="LeftNav5">
+                            <li class='active'>血液净化中心工程师<span>Blood Purification Center Engineer</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="JNull">亲，暂时没有招聘计划！请留意相关新闻。。。</div>
+        </div>
+        <div class="Quick">
+            <div class="Link">
+                <div class="QuickLink a_6a">
+                    <dl>
+                        <dt>快速链接 QUICK LINKS</dt>
+                        <dd>
+                            <a href="#">
+                                <p>简介</p>
+                                <p>Who We Are</p>
+                            </a>
+                            <a href="#">
+                                <p>我们的优势</p>
+                                <p>Why Us</p>
+                            </a>
+                            <a href="#">
+                                <p>案例分析</p>
+                                <p>What We Do</p>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <p>职位信息</p>
+                                <p>Join Us</p>
+                            </a>
+                        </dd>
+                    </dl>
+                    <i> </i>
+                    <dl>
+                        <dt>联系我们 CONTACT US</dt>
+                        <dd class="Contact">
+                            <p><img src="picture/quicklinkicoe.png" />宁夏银川市长城东路439号401</p>
+                            <p><img src="picture/quicklinkicom.png" />xxx@email.com</p>
+                            <p><img src="picture/quicklinkicot.png" />020-8944-9646</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="Share">
+                    <dl>
+                        <dt>关注我们 FOLLOW US ON</dt>
+                        <dd><a href="#" class="s1"><span></span>微信</a><a href="#" class="s2"><span></span>微博</a></dd>
+                        <dd id="QRcodeOn"><img src="picture/qrcode.jpg" /><i> </i>
+                            <p>关注微信二维码</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="Feedback">
+                <h2>意见反馈  Feedback</h2>
+                <i></i>
+                <input id="h_Name" name="Name" type="text" required value="" placeholder="填写您的姓名" />
+                <input id="h_Email" name="" value="" required placeholder="填写您的联系邮箱" />
+                <input id="h_phone" name="" value="" required placeholder="填写您的手机号码" />
+                <textarea id="h_Remark" name="Remark" required placeholder="填写您对我们的意见"></textarea>
+                <input value="发送反馈" type="button" name="h_FeedBackSubmit" class="button" />
+                <script src="js/jshelper.js"></script>
+                <script type="text/javascript">
+                document.getElementsByName("h_FeedBackSubmit")[0].onclick = function() {
+                    var name = document.getElementById("h_Name");
+                    var Email = document.getElementById("h_Email");
+                    var Remark = document.getElementById("h_Remark");
+                    var phone = document.getElementById("h_phone");
+                    if (name.value == '') {
+                        alert("请输入姓名");
+                        name.focus();
+                        name.select();
+                        return false;
+                    }
+                    if (Email.value == '') {
+                        alert("请输入联系邮箱");
+                        Email.focus();
+                        return false;
+                    } else {
+                        var rg = /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/;
+                        if (!rg.test(Email.value)) {
+                            alert("请输入正确的联系邮箱");
+                            Email.focus();
+                            Email.select();
+                            return false;
+                        }
+                    }
+
+                    //下面是手机验证，去除注释即可
+                    if (phone.value == '') {
+                        alert("请输入手机号码");
+                        phone.focus();
+                        return false;
+                    } else {
+                        var rg = /^(((13[0-9]{1})|15[0-9]{1}|18[0-9]{1}|[09]{1})+\d{8})$/;
+                        if (!rg.test(phone.value)) {
+                            alert("请输入正确的手机号码");
+                            phone.focus();
+                            phone.select();
+                            return false;
+                        }
+                    }
+
+                    if (Remark.value == '') {
+                        alert("请输入您的意见或建议");
+                        Remark.focus();
+                        return false;
+                    }
+                    ajaxPost("/Json/Handler.ashx?aim=Feedback", "phone=" + phone.value + "&Name=" + encodeURI(name.value) + "&Contact=" + encodeURI(Email.value) + "&Content=" + encodeURI(Remark.value) + "&t=" + new Date().getMilliseconds(), function(data) {
+                        if (data != '') {
+                            var json = (new Function('return ' + data))();
+                            if (json.status) {
+                                alert("反馈成功！感谢您的宝贵意见。");
+                                name.value = '';
+                                Email.value = '';
+                                phone.value = '';
+                                Remark.value = '';
+                            } else {
+                                alert(json.errormsg);
+                            }
+                        }
+                    });
+                }
+                </script>
             </div>
         </div>
-<!--页面五结束-->
-</div> 
-
-<!--侧边小圆点开始-->  
-    <ol class="yuanDian">
-    	<li class="current"></li>
-    	<li></li>
-    	<li></li>
-    	<li></li>
-        <li></li> 
-    </ol>
-<!--侧边小圆点结束-->
-	
-<!--导航开始-->
-    <div class="nav">
-		<ul class="navUl">
-        	<li>公司简介</li>
-        	<li>人员招聘</li>
-            <li>专项服务</li>
-            <li>关于</li>
-            <li>联系我们</li>
+      <!--   <div class="footer">
+            <img src="picture/footerbg.jpg" />
+            <span>© 2014-2015 Dawson. All Rights Reserved.</span>
+        </div> -->
+        <div id="WapHead">
+            <div class="logo"><img src="picture/logo.jpg" /></div>
+            <div id="Menu"><img src="picture/menu.png" /></div>
+            <ul id="MenuList">
+                <li><a>首页</a></li>
+                <li><a>公司简介</a></li>
+                <li><a>公司业务</a></li>
+                <li><a>专项服务</a></li>
+                <li><a >人员招聘</a></li>
+                <li><a >联系我们</a></li>
+            </ul>
+        </div>
+        <table class="WapCaseList">
+            <tr>
+                <td>
+                    <h1>招聘求职</h1>
+                    <i></i>
+                    <div class="cn">
+                        <p>单位：泰和光明血液透析中心</p>
+                        <p>· 工作地点：陕西、甘肃、宁夏、青海、内蒙、广东、广西、福建、海南</p>
+                        <p>· 待遇：面议</p>
+                        <p>· 工作性质：全职</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="WapPic"><img src="picture/jobsabout.jpg" /></div>
+        <div id="WapNr">
+            <div class="WapNr" style="display:block;">
+                <div>
+                    <h2>人事经理</h2>
+                    <div class="Time2">11
+                        <p>2018-03</p>
+                    </div>
+                    <div class="Main"><strong>岗位职责：</strong>
+                        <br />1、参与制定人力资源战略规划。 
+                        <br />2、组织制定行政管理规章制度及督促、检查制度的贯彻执行。 
+                        <br />3、负责本部门的信息资料档案管理工作。 
+                        <br />4、协助总经理处理公司公文、行政、人事工作。 
+                        <br />5、建立人事管理内部工作程序和工作标准，提高工作效率。 
+                        <br />6、制定符合公司发展并有激励性的薪酬激励体系。 
+                        <br />7、人员招聘，人事档案管理。 
+                        <br />8、劳动合同管理、签订。 
+                        <br />9、制定全面的考核体系及评价政策并组织实施，对各部门绩效评价过程进行监督，解决出现的问题，使评价体系落到实处，不断完善绩效管理体系。 
+                        <br />10、人际关系良好，具备较强的责任感和事业心。
+                        <br />
+                        <br />
+                        <strong>岗位要求：</strong>
+                        <br /> 1、招聘1人，专科及以上学历，人力资源、行政管理、劳动经济等相关专业；
+                        <br /> 2、全面了解人力资源各模块工作，熟悉劳动法等；
+                        <br /> 3、有较强的执行力、管理能力及职业素养，服务意识，团队合作精神；
+                        <br /> 4、沟通能力强，工作风格成熟稳重。
+                    </div>
+                </div>
+                <div>
+                    <h2>行政专员</h2>
+                    <div class="Time2">11
+                        <p>2018-03</p>
+                    </div>
+                    <div class="Main"><strong>岗位职责：</strong>
+                        <br /> 1、负责公司的行政管理工作，做好各部门间的沟通、协调与工作落实；
+                        <br /> 2、负责公司企业文化建设，组织和开展公司各项文体娱乐活动；
+                        <br /> 3、负责公司员工考勤的管理与统计工作，固定资产及其他办公设备的管理工作；
+                        <br /> 4、负责公司各类证件的办理、年审、续期、变更工作；
+                        <br /> 5、完成上级交办的其它工作。
+                        <br />
+                        <br />
+                        <strong>岗位要求：</strong>
+                        <br />招聘1人， 大专以上学历，行政管理、人力资源管理或相关专业；本科以上学历，营销/广告/人力资源相关专业；
+                        <br /> 2、 熟练操作办公软件；熟悉行政管理工作，清楚行政管理的业务流程；
+                        <br /> 3、  组织沟通协调能力强，有原则，执行能力强，有亲和力，气质、形象佳，性格开朗、乐观；有过人事助理或行政工作经验者优先。
+                    </div>
+                </div>
+            </div>
+            <div class="WapNr" style="display:none;">
+                <div>
+                    <h2>营销策划</h2>
+                    <div class="Time2">11
+                        <p>2018-03</p>
+                    </div>
+                    <div class="Main"><strong>岗位职责：</strong>
+                        <br /> 1、主导项目创意，完成创意构想、创意执行、后期设计制作跟进等工作；
+                        <br /> 2、提供专业视觉表现支持，保证高效率、高品质的完成工作；
+                        <br /> 3、了解客户需求，并密切与客户部，策略和其他相关部门合作，并且能够把客户的需求贯彻到创意当中；
+                        <br /> 4、配合设计团队确保项目及时推进。
+                        <br />
+                        <br />
+                        <strong>岗位要求：</strong>
+                        <br /> 1、招聘1人，市场营销、设计、媒体管理等相关专业大学本科及以上学历；
+                        <br /> 2、有营销策划经验、市场经验；具有敏锐的市场洞察力；
+                        <br />3、能够熟练掌握市场策划整体运作流程的细节，优秀的公关能力、协调能力和组织能力；
+                        <br /> 4、 较强的判断与决策能力、逻辑推理和分析能力。
+                    </div>
+                </div>
+            </div>
+            <div class="WapNr" style="display:none;">
+                <div>
+                    <h2>财务</h2>
+                    <div class="Time2">11
+                        <p>2018-03</p>
+                    </div>
+                    <div class="Main"><strong>岗位职责：</strong>
+                       <br /> 1、日常付款单据的整理；
+                        <br /> 2、日常报销付款及公司各项收付款业务，资金账户网银操作（银行账户）；
+                        <br /> 3、负责资金账户的开户、业务办理；
+                        <br /> 4、负责财务相关资料的整理及归档；
+                        <br /> 5、每月及时提供银行明细等资料；
+                        <br /> 6、编制各资金账户日记账；
+                        <br /> 7、负责每月工资的发放工作；
+                        <br /> 8、负责开具发票，协助会计账务处理；
+                        <br />
+                        <br /><strong>岗位要求：</strong>
+                        <br />1、招聘人数1人，财会专业大专或以上学历，有会计从业资格证书；
+                        <br /> 2、了解国家财经政策和会计、税务法规，熟悉银行结算业务；
+                        <br /> 3、一年以上出纳工作经验。
+                    </div>
+                </div>
+                <div>
+                    <h2>出纳</h2>
+                    <div class="Time2">11
+                        <p>2018-03</p>
+                    </div>
+                    <div class="Main"><strong>岗位职责：</strong>
+                        <br /> 1.负责日常收支的管理和核对；
+                        <br /> 2.登记现金及银行日记账，做到日清月结；
+                        <br /> 3.负责公司订单的统计、审核及管理；
+                        <br /> 4.负责记账凭证的编号、装订；
+                        <br /> 5.负责开具票据及制作各项出纳报表；
+                        <br />
+                        <br /><strong>岗位要求：</strong>
+                        <br /> 1、招聘1人，本科及以上学历，财会相关专业；
+                        <br /> 2、从事出纳工作2年以上，有一般纳税人企业、软件行业工作经验优先考虑；
+                        <br /> 3、有会计从业资格证优先；有较强的责任心和使命感，具有较强的沟通、协调能力、执行和抗压能力、保密意识强，有团队精神。
+                    </div>
+                </div>
+            </div>
+            <div class="WapNr" style="display:none;">
+                <div>
+                    <h2>医生</h2>
+                    <div class="Time2">11
+                        <p>2018-03</p>
+                    </div>
+                    <div class="Main">
+                        <p>
+                            <strong>岗位职责：</strong>
+                        </p>
+                        <br />1.负责透析患者的日常诊疗，做好透析患者的病例档案记录；
+                        <br />2.掌握透析患者的病情，制定个性化的透析及综合治疗方案；
+                        <br />3.评估透析效果，处理透析并发症；
+                        <br />
+                        <br /> 
+                        <strong>岗位要求：</strong>
+                        <br /> 1、招聘人数2人，大专及以上学历，临床医学或肾脏病学专业，有医师初级或中级执业资格；
+                        <br /> 2、具有二级以上医院工作经验；有肾内科或血透工作经验者优先；
+                        <br /> 3、有血液透析进修证书者优先；
+                        <br /> 4、注：如无血液透析进修证书，可安排三甲医院带薪进修3个月（进修期间只发基本工资）。
+                    </div>
+                </div>
+                <div>
+                    <h2>护士长</h2>
+                    <div class="Time2">11
+                        <p>2018-03</p>
+                    </div>
+                    <div class="Main"><strong>岗位职责：</strong>
+                        <br />1.负责透析中心日常护理工作的组织和管理；
+                        <br />2.负责中心护理人员的专业培训、团队建设等内部管理工作；
+                        <br />3.参与并指导护士完成透析患者的护理工作。
+                        <br />
+                        <br /> 
+                        <strong>岗位要求：</strong>
+                        <br /> 1、招聘人数1人，大专及以上学历，护理专业；
+                        <br /> 2、主管护师或5年以上护师工作经验；
+                        <br /> 3、具有二级以上医院工作经验，3年以上血液透析经验；
+                        <br /> 4、具备一定的教学、管理能力。
+                    </div>
+                </div>
+                <div>
+                    <h2>护士</h2>
+                    <div class="Time2">11
+                        <p>2018-03</p>
+                    </div>
+                    <div class="Main"><strong>岗位职责：</strong>
+                       <br />1.在护士长、护理组长领导下实施分管病人的各项护理工作；
+                        <br />2.落实各项护理工作流程、工作标准和技术规范；
+                        <br />3.按要求完成病情观察及护理记录；
+                        <br />
+                        <br /> 
+                        <strong>岗位要求：</strong>
+                        <br /> 1、招聘人数5人，大专及以上学历，具有护士资格证、执业证；
+                        <br /> 2、具有两年以上护理工作经验；
+                        <br /> 3、具有血液透析工作经验或血液透析进修证书者优先；
+                        <br /> 4、注：如无血液透析进修证书，可安排三甲医院带薪进修3个月（进修期间只发基本工资）
+                    </div>
+                </div>
+            </div>
+            <div class="WapNr" style="display:none;">
+                <div>
+                    <h2>血液净化中心工程师</h2>
+                    <div class="Time2">11
+                        <p>2018-03</p>
+                    </div>
+                    <div class="Main"><strong>岗位职责：</strong>
+                        <br />1、 负责血透室医疗仪器设备的管理工作；按需求负责仪器维修业务联系，保证所有仪器设备的完整，正常安全投入使用
+                        <br />2、 负责制定医疗仪器设备的操作规范，指导和监督医护人员正确使用医疗仪器设备；
+                        <br />3、 负责血透室新采购设备仪器的验收及安装调试工作；
+                        <br />4、制定仪器设备操作人员的培训计划（包括设备仪器的使用、日常保养、使用注意事项等）；
+                        <br />5、 负责设备器械台帐管理和填报，做到帐物相符、及时更新；
+                        <br />6、负责按规定具体办理仪器设备调拨、转让、报损、报废手续及帐目调整和资产处置工作；
+                        <br />7、 做好年度专项计划的申购、设备管理和清产核资工作。
+                        <br />
+                        <strong>岗位要求：</strong>
+                        <br /> 1、大专及以上学历医疗器械专业毕业，具备机械和电子学知识及一定的医疗知识；
+                        <br />2、具有血透室工作或者相关工作经验3年以上；
+                        <br />3、熟悉血液净化室（中心）各医疗设备的性能、结构、工作原理和维修技术；
+                        <br />4、有血透室工程师上岗培训资格证书者优先。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul id="WapJMenu">
+            <li class="bgodd active">
+                <p>人事部</p>
+            </li>
+            <li>
+                <p>策划部</p>
+            </li>
+            <li class="bgodd">
+                <p>财务部</p>
+            </li>
+            <li>
+                <p>医生招聘</p>
+            </li>
+            <li class="bgodd">
+                <p>其他部门</p>
+            </li>
         </ul>
-    </div>	
-<!--导航开始-->
-    </div>
-	</body>
+    </form>
+</body>
+
 </html>

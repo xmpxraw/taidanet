@@ -1,0 +1,1505 @@
+﻿@charset "utf-8";
+
+body, div, ul, li, p, a, span, table, tr, td, dl, dt, dd, input, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+    width: 100%;
+}
+
+input {
+    -webkit-appearance: none;
+}
+/********* PC style **********/
+
+#QRcode, #Header, #banner, .About, .NewDs, .Quick, .footer, .Dawson, .History, .Network, .Advantag, .Insight, .Strategy, .Resource, .Strategys, .Approval, .Honor, .Qualif, .Cert, .AppLogo, .Services, .Retail, .Case, .RPM, .ICE, .RSI, .BIR, .CaseList, .JobClass, .JobAbout, .NewPic, .NewList,.AboutImg {
+    display: none;
+}
+
+/********* pc style **********/
+
+
+/*===================================================================== Index style ================================================================*/
+
+
+/********* WapHead style **********/
+#WapHead {
+    width: 100%;
+    background:#ffffff;
+    text-align:center;
+    overflow: hidden;
+}
+
+    #WapHead img {
+        width:100%;
+        
+    }
+
+    #WapHead .logo {
+        float:left;
+        width:25%;
+        padding:3%;
+    }
+
+    #WapHead #Menu {
+        background: #ffcc00;
+        width: 16%;
+        margin-left:84%;
+        cursor: pointer;
+    }
+
+        #WapHead #Menu:hover {
+            background: #00c9ff;
+        }
+
+    #WapHead #MenuList {
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+        display: none;
+        background: #ffffff;
+    }
+
+        #WapHead #MenuList li {
+            border-top: 1px solid #c9c9c9;
+            margin-top: -1px;
+            font-size:100%;
+        }
+
+            #WapHead #MenuList li a {
+                width: 90%;
+                padding:5%;
+                color: #707070;
+                text-decoration: none;
+                display: block;
+            }
+
+                #WapHead #MenuList li a:hover {
+                    background:#ffcc00;
+                    color: #ffffff;
+                }
+
+/******* Footer Style ***********/
+
+.WapFooter {
+    width: 100%;
+    background: #ffffff;
+    position:relative;
+}
+
+    .WapFooter img {
+        width: 30%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .WapFooter span {
+        position:absolute;
+        right:0;
+        width: 100%;
+        font-size: 50%;
+        text-align: right;
+        margin-top: 4%;
+        bottom:26%;
+    }
+
+
+/********* WapBanner style **********/
+
+#WapBanner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+    #WapBanner .target {
+        width: 25%;
+        position: absolute;
+        z-index: 999;
+        height: 15px;
+        text-align: center;
+        margin: 0 40%;
+        bottom: 18px;
+        display: none;
+    }
+
+        #WapBanner .target span {
+            width: 12px;
+            height: 12px;
+            border: 1px solid #ffffff;
+            margin: 0 8px;
+            display: inline-block;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #WapBanner .target .active {
+            background: #00c9ff;
+            border: 1px solid #00c9ff;
+        }
+
+    #WapBanner .left, #WapBanner .right {
+        position: absolute;
+        width: 50px;
+        padding:20px 0;
+        background: #ffcc00;
+        text-align: center;
+        color: #ffffff;
+        
+        top: 30%;
+        display: table;
+        cursor: pointer;
+        opacity: 0.9;
+        filter: alpha(opacity=90);
+        transition: background-color 0.2s ease-in-out;
+        -webkit-transition: background-color 0.2s ease-in-out;
+        -moz-transition: background-color 0.2s ease-in-out;
+        -o-transition: background-color 0.2s ease-in-out;
+        -ms-transition: background-color 0.2s ease-in-out;
+    }
+
+        #WapBanner .left img, #WapBanner .right img {
+            width: 28%;
+        }
+
+        #WapBanner .left span, #WapBanner .right span {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+    #WapBanner .left {
+        z-index: 999;
+    }
+
+    #WapBanner .right {
+        z-index: 999;
+        right: 0;
+    }
+
+        #WapBanner .left:hover, #WapBanner .right:hover {
+            background: #2ed1fe;
+        }
+
+    #WapBanner .pic {
+        width: 100%;
+    }
+
+        #WapBanner .pic div {
+            width: 100%;
+            position: absolute;
+            display: none;
+        }
+
+        #WapBanner img, #WapBanner .pic img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+    #WapBanner .pic {
+        position: relative;
+    }
+
+        #WapBanner .pic .bg {
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            opacity: 0;
+            display: none;
+            transition: opacity 0.2s ease-in-out;
+            -webkit-transition: opacity 0.2s ease-in-out;
+            -moz-transition: opacity 0.2s ease-in-out;
+            -o-transition: opacity 0.2s ease-in-out;
+            -ms-transition: opacity 0.2s ease-in-out;
+        }
+
+
+    #WapBanner .text {
+        width: 60%;
+        text-align: center;
+        position: absolute;
+        z-index: 988;
+        top: 30%;
+        font-size: 120%;
+        line-height: 150%;
+        font-weight: bold;
+        color: #282c35;
+        margin: 0 20%;
+    }
+
+        #WapBanner .text p {
+            margin-bottom: 1%;
+        }
+
+        #WapBanner .text .button {
+            border: 1px solid #282c35;
+            width: 26%;
+            margin: 3% 37%;
+            font-size: 80%;
+        }
+
+
+
+/********* WapAbout style **********/
+.WapAbout {
+    width: 100%;
+    background: #ffcc00;
+    text-align: center;
+    padding: 10% 0;
+    overflow: hidden;
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+    .WapAbout .button {
+        width:80%;
+        margin: 7% auto 1% auto;
+        border: 2px solid #2c2f36;
+        font-size: 53%;
+        height:46px;
+        line-height:50px;
+		font-weight:bold;
+    }
+
+
+
+
+/********* WapAboutPic style **********/
+
+#WapAboutPic {
+    width: 100%;
+    position:relative;
+    overflow:hidden;
+}
+
+
+    #WapAboutPic .left, #WapAboutPic .right {
+        /*position: absolute;
+        width: 50px;
+        height: 6%;
+        background: #ffcc00;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 40%;
+        display: table;
+        cursor: pointer;
+        opacity: 0.9;
+        filter: alpha(opacity=90);
+        padding:3%;*/
+        position: absolute;
+        width: 50px;
+        padding: 20px 0px;
+        background: #ffcc00;
+        text-align: center;
+        color: #ffffff;
+        top: 40%;
+        display: table;
+        cursor: pointer;
+        opacity: 0.9;
+        filter: alpha(opacity=90);
+        transition: background-color 0.2s ease-in-out;
+        -webkit-transition: background-color 0.2s ease-in-out;
+        -moz-transition: background-color 0.2s ease-in-out;
+        -o-transition: background-color 0.2s ease-in-out;
+        -ms-transition: background-color 0.2s ease-in-out;
+    }
+
+        #WapAboutPic .left img, #WapAboutPic .right img {
+            width: 15px;
+        }
+
+        #WapAboutPic .left span, #WapAboutPic .right span {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        #WapAboutPic .left:hover, #WapAboutPic .right:hover {
+            background: #2ed1fe;
+        }
+
+    #WapAboutPic .left {
+        z-index: 4;
+    }
+
+    #WapAboutPic .right {
+        z-index: 5;
+        right: 0;
+    }
+
+
+        #WapAboutPic #WAboutImg{
+            width: 100%;
+        }
+    #WapAboutPic #WAboutImg div {
+
+        width:100%;
+        position:absolute;
+        overflow:hidden;
+    }
+
+
+        #WapAboutPic #WAboutImg .bg {
+         background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            opacity:0;
+            display: none;
+            transition: opacity 0.2s ease-in-out;
+            -webkit-transition: opacity 0.2s ease-in-out;
+            -moz-transition: opacity 0.2s ease-in-out;
+            -o-transition: opacity 0.2s ease-in-out;
+            -ms-transition: opacity 0.2s ease-in-out;
+    }
+
+        #WapAboutPic #WAboutImg .bg img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+
+
+
+/********* WapAboutInf style **********/
+
+.WapAboutInf {
+    width: 80%;
+    padding: 10%;
+    background: #FFCC00;
+    font-weight: bold;
+}
+    .WapAboutInf dt {
+        font-size:150%;
+    }
+
+    .WapAboutInf dt i {
+        margin: 10px 0;
+        width: 10%;
+        border-bottom: 1px solid #ffffff;
+        display: block;
+    }
+
+    .WapAboutInf dd {
+		font-size:110%;
+        font-weight: normal;
+        line-height: 160%;
+    }
+/********* WapNews style **********/
+
+.WapNews {
+    width: 80%;
+    padding: 10%;
+    background: #ffffff;
+    font-weight: bold;
+}
+
+    .WapNews dt {
+        font-size:150%;
+    }
+
+    .WapNews dt i {
+        margin: 10px 0;
+        width: 10%;
+        border-bottom: 1px solid #00c9ff;
+        display: block;
+    }
+
+    .WapNews dd {
+        font-weight: normal;
+		font-size:110%;
+        line-height:160%;
+    }
+
+        .WapNews dd input {
+            width: 100%;
+            padding:5px 0;
+            background: #00c9ff;
+            border: none;
+            margin-top: 10%;
+            color: #ffffff;
+            outline: none;
+			font-size:90%;
+            height:50px;
+
+        }
+            .WapNews dd input:hover {
+                background:#ffcc00;
+            }
+/********* WapNewsBox style **********/
+
+.WapNewsBox {
+    width: 100%;
+    color: #ffffff;
+    background: #2c2f36;
+    overflow: hidden;
+    border-collapse: collapse;
+    border: none;
+    height: 100%;
+}
+
+    .WapNewsBox td {
+        width: 100%;
+        padding: 5% 0;
+        height: 90%;
+        vertical-align: top;
+    }
+
+    .WapNewsBox h2 {
+        font-size: 150%;
+        font-weight: bold;
+        line-height: 200%;
+        margin: 0 8%;
+    }
+
+    .WapNewsBox i {
+        margin-top: 30px;
+        width: 60px;
+        border-bottom: 1px solid #ffffff;
+        display: block;
+        margin: 4% 8%;
+    }
+
+    .WapNewsBox .nr {
+        margin: 20px 8%;
+        height: 105px;
+		font-size:110%;
+    }
+
+    .WapNewsBox .more {
+        margin: 0 8%;
+    }
+
+.WapNewsBox .more a
+{
+	color:#ffffff;
+}
+
+    .WapNewsBox .lineOne {
+        background: url(../images/newboxleft.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+        .WapNewsBox .lineOne h2, .WapNewsBox .lineTwo h2 {
+            color: #ffcc00;
+        }
+
+    .WapNewsBox .lineTwo {
+        background: url(../images/newboxbottom.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+/********* WapLink style **********/
+
+.WapLink {
+    width: 80%;
+    padding: 5% 10%;
+    background: #eeeeee;
+}
+
+    .WapLink dt {
+        font-size: 150%;
+        font-weight: bold;
+        margin-bottom: 10%;
+    }
+
+    .WapLink dd {
+        display: block;
+        overflow: hidden;
+    }
+
+        .WapLink dd a {
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            text-decoration: none;
+            color: #6a6d71;
+            width: 50%;
+            line-height: 45px;
+            text-align: center;
+            transition: color 0.2s ease-in-out;
+            -webkit-transition: color 0.2s ease-in-out;
+            -moz-transition: color 0.2s ease-in-out;
+            -o-transition: color 0.2s ease-in-out;
+            -ms-transition: color 0.2s ease-in-out;
+        }
+
+            .WapLink dd a span {
+                width: 60px;
+                height: 60px;
+                display: block;
+                background: #c9c9c9;
+                margin: 0 auto;
+            }
+
+            .WapLink dd a:hover {
+                color: #00c9ff;
+            }
+
+    .WapLink .s1 span {
+        background: url(../images/shareicos1.png) no-repeat left top;
+        transition: background-image 0.2s ease-in-out;
+    }
+
+    .WapLink .s1:hover span {
+        background: url(../images/shareicos1h.png) no-repeat left top;
+    }
+
+
+    .WapLink .s2 span {
+        background: url(../images/shareicos2.png) no-repeat left top;
+        transition: background-image 0.2s ease-in-out;
+    }
+
+    .WapLink .s2:hover span {
+        background: url(../images/shareicos2h.png) no-repeat left top;
+    }
+
+
+/********* WapFeedback style **********/
+
+.WapFeedback {
+    width: 80%;
+    padding: 10%;
+    background: #ffcc00;
+}
+
+
+    .WapFeedback h2 {
+        font-size: 150%;
+        line-height: 160%;
+        font-weight: bold;
+    }
+
+    .WapFeedback i {
+        width: 10%;
+        border-bottom: 1px solid #ffffff;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .WapFeedback input {
+        border: 1px solid #ffba00;
+    }
+
+    .WapFeedback textarea {
+        height: 105px;
+        border: 1px solid #ffba00;
+        resize: none;
+    }
+
+    .WapFeedback input, .WapFeedback textarea {
+        display: block;
+        width: 94%;
+        color: #6a6e71;
+        font-family: "Microsoft YaHei";
+        margin: 3% 0 0 0;
+        line-height: 200%;
+        padding:3%;
+    }
+
+    .WapFeedback .button {
+        width: 100%;
+        background: #000000;
+        color: #ffffff;
+        margin: 5% 0 0 0;
+        font-size:90%;
+        height:50px;
+        padding:5px 0;
+    }
+
+        .WapFeedback .button:hover {
+            background: #434343;
+        }
+
+
+/*===================================================================== AboutUs style ================================================================*/
+
+
+/********* Wap AboutBanner style **********/
+
+.Infh {
+    background: #2c2f36;
+    color: #ffffff;
+}
+
+    .Infh dt {
+        color: #ffcc00;
+    }
+
+    .Infh dd {
+        margin: 2% 0;
+    }
+
+    .Infh button {
+        width: 100%;
+        background: #ffcc00;
+        border: none;
+        padding: 7% 0;
+        font-size:120%;
+    }
+
+.Infw {
+    background: #ffffff;
+    color: #000000;
+}
+
+    .Infw dt i {
+        border-color: #00c9ff;
+        margin: 3% 0;
+    }
+
+
+/*===================================================================== Advantag style ================================================================*/
+.WapDawson {
+    width: 100%;
+    background: #2c2f36;
+    text-align: center;
+    color: #ffffff;
+}
+
+    .WapDawson td {
+        padding: 8% 10%;
+    }
+
+    .WapDawson h1 {
+        font-weight: normal;
+        line-height: 200%;
+    }
+
+        .WapDawson h1 span {
+            color: #ffffff;
+        }
+
+    .WapDawson i {
+        width: 60px;
+        border-bottom: 1px solid #ffffff;
+        display: block;
+        margin: 6% auto;
+    }
+
+    .WapDawson .cn {
+        color: #00c9ff;
+        margin: 3% 0;
+    }
+
+    .WapDawson .en {
+        line-height: 30px;
+    }
+
+
+.WapFive {
+    width: 65%;
+    padding: 15% 5% 15% 30%;
+}
+
+    .WapFive dt {
+        font-size:180%;
+        font-weight:bold;
+        color: #2c2f36;
+    }
+
+.Insight dt span {
+    color: #ffab1a;
+}
+
+.WapFive dd {
+    color: #7d7d7d;
+    font-size: 88%;
+    margin: 5% 0 0 0;
+	line-height:160%;
+}
+
+.Wbg01 {
+    background: url(../images/ff_01.jpg) no-repeat 10% center;
+    background-size: 25%;
+}
+
+.Wbg02 {
+    background: url(../images/ff_02.jpg) no-repeat 10% center;
+    background-size: 25%;
+}
+
+.Wbg03 {
+    background: url(../images/ff_03.jpg) no-repeat 10% center;
+    background-size: 25%;
+}
+
+.Wbg04 {
+    background: url(../images/ff_04.jpg) no-repeat 10% center;
+    background-size: 25%;
+}
+
+.Wbg05 {
+    background: url(../images/ff_05.jpg) no-repeat 10% center;
+    background-size: 25%;
+}
+
+
+
+/*===================================================================== WapApproval style ================================================================*/
+
+.WapApproval {
+    width: 100%;
+    color: #000000;
+    background: #ffcc00;
+}
+
+    .WapApproval td {
+        padding: 8% 10%;
+    }
+
+    .WapApproval h1 {
+        font-weight: normal;
+        line-height: 200%;
+    }
+
+    .WapApproval i {
+        width: 60px;
+        border-bottom: 1px solid #ffffff;
+        display: block;
+        margin: 6% 0;
+    }
+
+    .WapApproval .cn {
+        margin: 3% 0;
+		line-height:160%;
+    }
+
+    .WapApproval span {
+        color: #535353;
+        line-height: 26px;
+    }
+
+
+
+.WapHonor {
+    width: 100%;
+    overflow: hidden;
+}
+
+    .WapHonor li {
+        width: 94%;
+        padding: 6% 3%;
+    }
+
+        .WapHonor li img {
+            width: 40%;
+            margin-right: 6%;
+            display: inline-table;
+            vertical-align: middle;
+        }
+
+        .WapHonor li p {
+            width: 52%;
+            float: right;
+            color: #535353;
+            display: block;
+            margin: 5% 0 0 0;
+			line-height:160%;
+        }
+
+            .WapHonor li p span {
+                font-size: 200%;
+                display: block;
+                line-height: 160%;
+            }
+
+    .WapHonor .w1 {
+        background: #ffffff;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+
+    .WapHonor .w2 {
+        background: #eeeeee;
+         overflow:hidden;
+        text-overflow:ellipsis;
+    }
+
+
+.WapQualif {
+    background: url(../images/qualifi.jpg) no-repeat center center;
+    padding: 5% 0;
+}
+
+    .WapQualif .Pic {
+        width: 50%;
+        background: #ffcc00;
+        color: #000000;
+        margin: 0 auto;
+        text-align: center;
+        padding: 6% 3%;
+    }
+
+        .WapQualif .Pic h1 {
+            font-weight: normal;
+        }
+
+        .WapQualif .Pic i {
+            width: 60px;
+            border-bottom: 1px solid #ffffff;
+            display: block;
+            margin: 5% auto;
+        }
+
+
+
+.WapCert {
+    width: 100%;
+    overflow: hidden;
+    background: #2c2f36;
+    color: #ffffff;
+}
+
+.WapCert dt p{ line-height:160%;}
+
+    .WapCert span {
+        display: block;
+        color: #7e8aa2;
+        margin-top: 2%;
+    }
+
+    .WapCert img {
+        margin-bottom: 5%;
+    }
+
+    .WapCert dt {
+        padding: 20%;
+    }
+
+
+    .WapCert dd {
+        background: #272a2f;
+        padding: 10% 5%;
+        overflow: hidden;
+    }
+
+
+        .WapCert dd div {
+            width: 35%;
+            float: left;
+            display: inline;
+            margin-left: 10%;
+        }
+
+
+.WapAppLogo {
+    width: 95%;
+    background: #ffffff;
+    padding: 5% 2.5%;
+}
+
+    .WapAppLogo ul {
+        overflow: hidden;
+    }
+
+    .WapAppLogo li {
+        width: 28%;
+        margin: 20px 0 20px 4%;
+        display: inline-block;
+    }
+
+        .WapAppLogo li img {
+        }
+
+    .WapAppLogo .button {
+        width: 100%;
+        background: #00c9ff;
+        text-align: center;
+        margin-top: 10%;
+        padding: 5px 0;
+        height:30px;
+        line-height:30px;
+        border: none;
+        color: #ffffff;
+        font-size:110%;
+    }
+        .WapAppLogo .button:hover {
+            cursor:pointer;
+        }
+
+/*===================================================================== WapSer style ================================================================*/
+
+.WapSer {
+    width: 100%;
+    background: #2c2f36;
+    color: #ffffff;
+}
+
+    .WapSer td {
+        padding: 8% 10%;
+    }
+
+    .WapSer h1 {
+        font-weight: normal;
+        line-height: 200%;
+        color: #ffcc00;
+    }
+
+        .WapSer h1 span {
+            color: #ffffff;
+        }
+
+    .WapSer i {
+        width: 60px;
+        border-bottom: 1px solid #ffffff;
+        display: block;
+        margin: 6% 0;
+    }
+
+    .WapSer .cn {
+        margin: 3% 0;
+    }
+
+
+
+.WapUser {
+    width: 100%;
+    padding: 8% 10%;
+    line-height: 28px;
+}
+
+    .WapUser h2 {
+        font-weight: normal;
+    }
+
+        .WapUser h2 span {
+            display: block;
+            font-size: 80%;
+            color: #7d7d7d;
+        }
+
+    .WapUser i {
+        width: 60px;
+        border-bottom: 1px solid #ffffff;
+        display: block;
+        margin: 6% 0;
+    }
+
+    .WapUser .cn {
+        color: #535353;
+    }
+
+    .WapUser td {
+        padding: 8%;
+    }
+
+    .WapUser .More {
+        margin: 20% 0 0 0;
+        color: #000000;
+    }
+
+
+.Wbg1 {
+    background: #ffcc00;
+}
+
+.Wbg2 {
+    background: #ffffff;
+}
+
+    .Wbg2 i {
+        border-color: #ffcc00;
+    }
+
+.Wbg3 {
+    background: #25282d url(../images/bueissbg.jpg) no-repeat center center;
+}
+
+    .Wbg3 h2 {
+        color: #ffcc00;
+    }
+
+    .Wbg3 .cn {
+        color: #ffffff;
+    }
+
+
+.Wbg4 {
+    background: #25282d;
+}
+
+    .Wbg4 h2 {
+        color: #ffcc00;
+    }
+
+    .Wbg4 .cn {
+        color: #ffffff;
+    }
+
+/*===================================================================== Case style ================================================================*/
+
+
+.WapCase {
+    width: 100%;
+    background: #2c2f36;
+    color: #ffffff;
+}
+
+    .WapCase td {
+        padding: 8% 10%;
+    }
+
+    .WapCase h1 {
+        font-weight: normal;
+        line-height: 200%;
+        color: #ffcc00;
+    }
+
+        .WapCase h1 span {
+            color: #ffffff;
+        }
+
+    .WapCase i {
+        width: 60px;
+        border-bottom: 1px solid #ffffff;
+        display: block;
+        margin: 6% 0;
+    }
+
+    .WapCase .cn {
+        margin: 3% 0;
+		line-height:160%;
+    }
+
+
+.WapRPM {
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    position: relative;
+}
+
+    .WapRPM .Inf {
+        width: 100%;
+        float: right;
+    }
+
+        .WapRPM .Inf td {
+            padding: 8% 12%;
+        }
+
+        .WapRPM .Inf h1 {
+            font-weight: normal;
+            line-height: 200%;
+        }
+
+        .WapRPM .Inf i {
+            width: 60px;
+            border-bottom: 1px solid #ffab1a;
+            display: block;
+            margin: 6% 0;
+        }
+
+        .WapRPM .Inf .cn {
+            margin: 3% 0;
+            color: #7d7d7d;
+        }
+
+        .WapRPM .Inf .en {
+            line-height: 30px;
+            color: #7d7d7d;
+        }
+
+    .WapRPM .more {
+        top: 22%;
+        right: 10%;
+        width: 72px;
+        height: 58px;
+        background: url(../images/yellowmorebg.png) no-repeat;
+        position: absolute;
+        z-index: 14;
+    }
+
+        .WapRPM .more:hover {
+            background: url(../images/moreblue.png) no-repeat;
+        }
+
+        .WapRPM .more a {
+            padding: 0 0 0 16px;
+            height: 58px;
+            display: block;
+            text-align: center;
+            line-height: 58px;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+
+
+
+    .WapRPM .bg {
+        background: #ffcc00;
+        color: #000000;
+    }
+
+        .WapRPM .bg .en, .WapRPM .bg .cn {
+            color: #000000;
+        }
+
+        .WapRPM .bg i {
+            border-color: #ffffff;
+        }
+
+
+
+
+
+.WapRSIMore {
+    top: 22%;
+    right: 10%;
+    width: 72px;
+    height: 58px;
+    background: url(../images/greymorebg.png) no-repeat;
+    position: absolute;
+    z-index: 14;
+}
+
+    .WapRSIMore:hover {
+        background: url(../images/moreblue.png) no-repeat;
+    }
+
+    .WapRSIMore a {
+        padding: 0 0 0 16px;
+        height: 58px;
+        display: block;
+        text-align: center;
+        line-height: 58px;
+        text-decoration: none;
+        color: #ffcc00;
+    }
+
+
+/*===================================================================== Case style ================================================================*/
+.WapCaseList {
+    width: 100%;
+    background: #2c2f36;
+    color: #ffffff;
+}
+
+    .WapCaseList td {
+        padding: 8% 10%;
+    }
+
+    .WapCaseList h1 {
+        font-weight: normal;
+        line-height: 200%;
+        color: #ffcc00;
+    }
+
+        .WapCaseList h1 span {
+            color: #ffffff;
+        }
+
+    .WapCaseList i {
+        width: 60px;
+        border-bottom: 1px solid #ffffff;
+        display: block;
+        margin: 6% 0;
+    }
+
+    .WapCaseList .cn {
+        margin: 3% 0;
+		line-height:160%;
+    }
+
+
+.WapNr {
+    width: 80%;
+    padding: 10%;
+    position: relative;
+    display: block;
+}
+
+    .WapNr div {
+        position: relative;
+    }
+
+    .WapNr h2 {
+        border-bottom: 1px solid #00c9ff;
+        line-height:210%;
+		padding:0 30% 5% 0;
+    }
+
+    .WapNr .Time {
+  width: 23%;
+  color: #a0a0a0;
+  position: absolute;
+  background: #eeeeee;
+  right: 10%;
+  margin-top:-80px;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 300%;
+  line-height: 100%;
+}
+
+        .WapNr .Time p {
+            font-size: 30%;
+            padding:5px;
+            line-height:50%;
+        }
+		
+		 .WapNr .Time2 {
+  width: 23%;
+  color: #a0a0a0;
+  position: absolute;
+  background: #eeeeee;
+  right: 0;
+  margin-top: -80px;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 300%;
+  line-height: 100%;
+}
+
+        .WapNr .Time2 p {
+            font-size: 30%;
+            padding:5px;
+            line-height:50%;
+        }
+
+    .WapNr .Main {
+        padding: 5% 0;
+        color: #707070;
+    }
+
+        .WapNr .Main strong {
+            color: #000000;
+        }
+
+        .WapNr .Main p {
+            line-height: 200%;
+        }
+
+        .WapNr .Main img {
+            margin: 5% 0;
+        }
+
+#WapJMenu li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    background: #3c4248;
+    color: #ffffff;
+    padding: 2% 0;
+    cursor: pointer;
+    height: 44px;
+    line-height: 44px;
+}
+
+#WapJMenu .bgodd {
+    background: #2c2f36;
+}
+
+#WapJMenu .active {
+    background: #ffcc00;
+    color: #000000;
+}
+
+
+.WapNew {
+    width: 100%;
+    overflow: hidden;
+    background: #2c2f36;
+    color: #ffffff;
+}
+
+
+    .WapNew td {
+        padding: 10%;
+    }
+
+    .WapNew h1 {
+        font-weight: normal;
+        line-height: 200%;
+        color: #ffcc00;
+    }
+
+        .WapNew h1 span {
+            color: #ffffff;
+        }
+
+    .WapNew i {
+        width: 60px;
+        border-bottom: 1px solid #00c9ff;
+        display: block;
+        margin: 3% 0;
+    }
+
+    .WapNew .cn {
+        margin: 3% 0;
+		line-height:160%;
+    }
+
+
+
+
+.WapNewList li {
+    padding: 5% 2%;
+}
+
+    .WapNewList li:hover {
+        background: #f5f5f5;
+    }
+
+.WapNewList .Time {
+    float: left;
+    font-size: 300%;
+    width: 15%;
+    background: #ffcc00;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5%;
+    line-height: 100%;
+}
+
+    .WapNewList .Time span {
+        font-size: 30%;
+        display: block;
+        line-height: 50%;
+        padding: 5px 0;
+    }
+
+.WapNewList h2 {
+    font-weight: normal;
+    padding-left: 23%;
+    line-height: 150%;
+}
+
+.WapNewList .en {
+    padding-left: 23%;
+    color: #a0a0a0;
+    font-size: 80%;
+	line-height:160%;
+}
+
+.WapNewList .nr {
+    padding-left: 23%;
+    color: #a0a0a0;
+    margin-top: 5%;
+	line-height:160%;
+}
+
+#WapNewAN {
+    width: 90%;
+    margin: 5%;
+    border: none;
+    background: #e5e5e5;
+    padding: 5px 0;
+    color: #a0a0a0;
+	font-size:110%;
+    height:50px;
+}
+
+
+
+.WapMright {
+    width: 90%;
+    margin: 0 5%;
+}
+
+    .WapMright h2 {
+        line-height: 160%;
+        padding:5% 0;
+    }
+
+    .WapMright .tit {
+        border-top: 2px solid #ffcc00;
+        padding-top: 2%;
+        color: #959595;
+    }
+
+    .WapMright .Time {
+        width: 23%;
+        color: #a0a0a0;
+        float: right;
+        background: #eeeeee;
+        text-align: center;
+        padding: 5px;
+        font-size: 300%;
+        margin-left: 10px;
+        line-height: 100%;
+    }
+
+        .WapMright .Time p {
+            font-size: 30%;
+            display: block;
+            line-height: 50%;
+            padding: 5px 0;
+        }
+
+    .WapMright .Main {
+        padding: 5% 0;
+        color: #707070;
+    }
+
+        .WapMright .Main strong {
+            color: #000000;
+        }
+
+        .WapMright .Main p {
+            line-height: 200%;
+        }
+
+        .WapMright .Main img {
+            margin: 5% 0;
+        }
+
+
+
+
+
+
+
+
+/******* A-LINK Style ***********/
+
+.a_6a a {
+    color: #6a6d70;
+    text-decoration: none;
+}
+
+    .a_6a a:hover {
+        color: #00c9ff;
+    }
+
+.a_00 a {
+    color: #000000;
+    text-decoration: none;
+}
+
+    .a_00 a:hover {
+        color: #000000;
+    }
+
+.a_ff a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+    .a_ff a:hover {
+        color: #00c9ff;
+    }
+
+.a_2c a {
+    color: #2c2f36;
+    text-decoration: none;
+}
+
+    .a_2c a:hover {
+        color: #2c2f36;
+    }
